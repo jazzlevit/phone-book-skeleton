@@ -2,8 +2,8 @@
 
 /** @var \frontend\models\Contact $model */
 
-use backend\helpers\Html;
-use backend\helpers\Url;
+use frontend\helpers\Html;
+use yii\helpers\Url;
 
 ?>
 <div class="box">

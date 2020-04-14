@@ -2,9 +2,9 @@
 
 /** @var \frontend\models\Contact $model */
 
-use backend\helpers\Html;
-use backend\helpers\Url;
-use backend\widgets\ActiveForm;
+use frontend\helpers\Html;
+use yii\helpers\Url;
+use yii\widgets\ActiveForm;
 
 $form = ActiveForm::begin();
 ?>

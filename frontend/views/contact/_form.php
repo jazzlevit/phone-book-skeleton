@@ -2,12 +2,13 @@
 
 use frontend\models\Contact;
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use frontend\widgets\ActiveForm;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $model Contact */
-/* @var $form yii\widgets\ActiveForm */
+/* @var $form ActiveForm */
+
 ?>
 
 <?php $form = ActiveForm::begin(); ?>

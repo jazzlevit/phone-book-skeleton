@@ -90,12 +90,27 @@ class ContactController extends \yii\web\Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            Yii::$app->session->setFlash('success', 'Contact successfully updated');
             return $this->redirect(['contact/index']);
         }
 
         return $this->render('update', [
             'model' => $model,
         ]);
+    }
+
+    /**
+     * Creates a new Contact model.
+     */
+    public function actionDelete($id)
+    {
+        $model = $this->findModel($id);
+
+        if ($model->delete()) {
+            Yii::$app->session->setFlash('success', 'Contact successfully deleted');
+        }
+
+        return $this->redirect(['contact/index']);
     }
 
     /**
