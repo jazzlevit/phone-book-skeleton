@@ -11,7 +11,7 @@ use yii\helpers\Url;
         <div class="row">
             <div class="col-md-6">
                 <h4 class="text-muted">
-                    <?php echo Yii::t('app', 'Phones: ({count})', ['count' => $model->getPhones()->count()]); ?>
+                    <?php echo Yii::t('app', 'Phones: {count}', ['count' => $model->getPhones()->count()]); ?>
                 </h4>
             </div>
             <div class="col-md-6 text-right">
@@ -30,7 +30,7 @@ use yii\helpers\Url;
     <div class="box-body">
 
         <label class="control-label text-muted">
-            <?php echo Yii::t('app', 'Max 20 phone numbers'); ?>
+            <small><?php echo Yii::t('app', 'Only twenty numbers allowed'); ?></small>
         </label>
 
         <ul class="list-group">
